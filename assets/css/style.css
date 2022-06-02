@@ -4,7 +4,11 @@
 }
 
 :root {
-    --primary-color: #cec3c1
+    --primary-color: #cec3c1;
+    --secondary-color: #240115;
+    --tertiary-color: #De3c4b;
+    --quaternary-color: #87F5FB;
+    --white: #FFF;
 }
 
 body {
@@ -25,33 +29,57 @@ header {
 }
 
 header h1 {
-    text-align: center;
     width: 100%;
     font-weight: bold;
     font-size: 36px;
-    color:#240115;
+    color: var(--secondary-color);
     flex: 1 0 0;
+    text-shadow: 2px 2px 5px var(--white);
 }
 
 header nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
+
 }
 
 header a {
     text-decoration: none;
-    color: #240115;
+    color: var(--secondary-color);
     padding: 4px;
+    text-align: center;
+    text-shadow: 2px 2px 5px var(--white);
+}
+
+nav ul li a:hover {
+    background-color: var(--quaternary-color);
+    border-radius: 25px;
+}
+
+/* FOOTER styles start */
+footer {
+    text-align: center;
+    font-family: cursive;
+    color: var(--secondary-color);
+    margin-top: 15px;
 }
 
 /* ABOUT ME styles start */
+h2 {
+    text-align: center;
+}
 
 /* MY WORK styles start */
 
 /* CONTACT ME styles start */
+.contact-flex {
+    text-align: center;
+}
 
-/* FOOTER styles start */
+.links {
+    list-style: none;
+}
 
 /* MEDIA QUERY FOR TABLETS (768px - 989px) */
 
