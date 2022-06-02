@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #cec3c1
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER styles start */
+header {
+    padding: 20px 35px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding-bottom: 0;
+    
+}
+
+header h1 {
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 36px;
+    color:#240115;
+    flex: 1 0 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header a {
+    text-decoration: none;
+    color: #240115;
+    padding: 4px;
+}
+
+/* ABOUT ME styles start */
+
+/* MY WORK styles start */
+
+/* CONTACT ME styles start */
+
+/* FOOTER styles start */
+
+/* MEDIA QUERY FOR TABLETS (768px - 989px) */
+
+/* MEDIA QUERY FOR SMALL SCREENS (980px - 1199px) */
+
+/*MEDIA QUERY FOR DESKTOP/LAPTOP/LARGE SCREENS (1200px and beyond) */
+@media screen and (min-width: 1200px) {
+    header {
+        justify-content: space-between;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+    }
+}
