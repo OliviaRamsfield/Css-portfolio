@@ -25,6 +25,7 @@ header {
     flex-wrap: wrap;
     position: relative;
     padding-bottom: 0;
+    margin-bottom: 10px;
     
 }
 
@@ -34,7 +35,7 @@ header h1 {
     font-size: 36px;
     color: var(--secondary-color);
     flex: 1 0 0;
-    text-shadow: 2px 2px 5px var(--white);
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.9);
 }
 
 header nav ul {
@@ -49,7 +50,7 @@ header a {
     color: var(--secondary-color);
     padding: 4px;
     text-align: center;
-    text-shadow: 2px 2px 5px var(--white);
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.9);
 }
 
 nav ul li a:hover {
@@ -70,7 +71,100 @@ h2 {
     text-align: center;
 }
 
+.about-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.about-flex img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(36, 1, 21, 0.5);
+}
+
 /* MY WORK styles start */
+.work-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#main-work {
+    max-height: 100%;
+    width: auto;
+    position: relative;
+}
+
+#surf {
+    position: absolute;
+    bottom: 20px;
+    background-color:#87F5FB;
+    color: var(--tertiary-color);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#second-work {
+    max-height: 100%;
+    width: auto;
+    position: relative;
+}
+
+#led {
+    position: absolute;
+    bottom: 20px;
+    background-color:#87F5FB;
+    color: var(--tertiary-color);
+    padding-left: 20px;
+    padding-right: 20px; 
+}
+
+#third-work {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#calculator {
+    position: absolute;
+    bottom: 20px;
+    background-color:#87F5FB;
+    color: var(--tertiary-color);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#fourth-work {
+    max-height: 100%;
+    width: auto;
+    position: relative;   
+}
+
+#pretzel {
+    position: absolute;
+    bottom: 20px;
+    background-color:#87F5FB;
+    color: var(--tertiary-color);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#fifth-work {
+    max-height: 100%;
+    width: auto;
+    position: relative;  
+}
+
+#run {
+    position: absolute;
+    bottom: 20px;
+    background-color:#87F5FB;
+    color: var(--tertiary-color);
+    padding-left: 20px;
+    padding-right: 20px; 
+}
 
 /* CONTACT ME styles start */
 .contact-flex {
