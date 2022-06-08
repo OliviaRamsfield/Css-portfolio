@@ -1,13 +1,13 @@
 # Portfolio
 
-##Purpose
+## Purpose
 A website that introduces myself as a developer, displays my work, and includes my contact information for potential employeers.
 
-##Built With
+## Built With
 HTML
 CSS
-##Website
+## Website
 https://oliviaramsfield.github.io/Portfolio/
 
-##Contribution
+## Contribution
 Made with ❤️ by Olivia Ramsfield
