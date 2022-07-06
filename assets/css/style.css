@@ -104,50 +104,50 @@ h2 {
 }
 
 /* MY WORK styles start */
-.work-grid {
+.wrapper {
     /*display: flex;
     flex-wrap: wrap;*/
     display: grid;
-    grid-template-columns: 1fr 5fr 5fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "nav main-work main-work" 
-        ". second-work third-work"
-        ". fourth-work fifth-work";
-    column-gap: 10px;
-    justify-content: stretch;
+    grid-template-columns: 2fr 5fr 5fr;
+    grid-auto-rows: minmax(100px, auto);
+    column-gap: 5px;
+    row-gap: 5px;
 }
 
-.work-grid h2 {
-grid-area: nav;
+.wrapper h2 {
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 1;
+grid-row-end: 4;
 }
 
-.main-work {
+.main-work img {
+    object-fit: cover;
+    width: 100%;
     max-height: 100%;
-    width: auto;
-    justify-content: stretch;
-    position: relative;
-    display: inline-grid;
-
+    grid-column-start: 2;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
 
 }
 
 #surf {
     position: absolute;
-    bottom: 20px;
     background-color:#87F5FB;
     color: var(--tertiary-color);
     padding-left: 20px;
     padding-right: 20px;
+    bottom: 70px;
+
 }
 
-#second-work {
-    max-height: 100%;
-    width: auto;
-    grid-area: second-work;
-    justify-content: stretch;
-    position: relative;
-    display: inline-grid;
+.second-work img {
+    
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 2 / 3;
 }
 
 #led {
@@ -159,12 +159,13 @@ grid-area: nav;
     padding-right: 20px; 
 }
 
-#third-work {
+#third-work img {
+    object-fit: cover;
     width: 100%;
-    height: auto;
-    position: relative;
-    display: inline-grid;
-    grid-area: third-work;
+    max-height: 100%;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
 }
 
 #calculator {
@@ -176,12 +177,13 @@ grid-area: nav;
     padding-right: 20px;
 }
 
-#fourth-work {
+#fourth-work img {
+    object-fit: cover;
+    width: 100%;
     max-height: 100%;
-    width: auto;
-    position: relative;  
-    display: inline-grid; 
-    grid-area: fourth-work;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
 }
 
 #pretzel {
@@ -193,12 +195,13 @@ grid-area: nav;
     padding-right: 20px;
 }
 
-#fifth-work {
+#fifth-work img {
+    object-fit: cover;
+    width: 100%;
     max-height: 100%;
-    width: auto;
-    position: relative;
-    display: inline-grid; 
-    grid-area: fifth-work; 
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
 }
 
 #run {
@@ -226,6 +229,9 @@ grid-area: nav;
 
 /* MEDIA QUERY FOR SMALL SCREENS (980px - 1199px) */
 @media screen and (max-width: 1199px) {
+    .wrapper h2 {
+        width: 200px;
+    }
 
 }
 
