@@ -268,7 +268,7 @@ grid-row-end: 4;
 /*MEDIA QUERY FOR PHONES  (768px and below) */
 @media screen and (max-width: 768px) {
     header {
-        position: fixed; 
+        position: static; 
     }
 
     /* My Work */
@@ -276,23 +276,78 @@ grid-row-end: 4;
         display: flex;
         flex-direction:column;
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
     
     /* Rapid Translation */
     #main-work {
-        border: none; 
+        border: none;
+        text-align: left; 
     }
 
-#main-work img {
-    object-fit: cover;
-    width: 100%;
-    max-height: 100px;
-    max-width: 200px;
+    #main-work img {
+        max-height: 200px;
+        max-width: 300px;
+    }
+
+    #one-text {
+        font-size: 12px;
+    }
+
+    /* Work Day Scheduler */
+    #second-work {
+        border: none;
+    }
+
+    #second-work img {
+        max-height: 200px;
+        max-width: 300px;
+    }
+
+    #two-text {
+        font-size: 12px;
+    } 
+
+    /* Password Generator */
+    #third-work {
+        border: none;
+    }
+
+    #third-work img {
+        max-height: 200px;
+        max-width: 300px;
+    }
+
+    #third-text {
+        font-size: 12px;
+    }
+
+    /* Placeholder */
+    #fourth-work {
+        border: none;
+    }
+
+    #fourth-work img {
+        max-height: 200px;
+        max-width: 300px;
+    }
+
+    #fourth-text { 
+        font-size: 12px;
+    }
+
+    /* Run Buddy */
+    #fifth-work {
+        border: none;
 }
 
-#one-text {
-    background-color: transparent;
-    color: var(--tertiary-color);
-    font-size: 12px;
-}
+    #fifth-work img {
+        max-height: 200px;
+        max-width: 300px;
+    }
+
+    #fifth-text {
+        font-size: 12px;
+    }
 }
